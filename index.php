@@ -1,0 +1,59 @@
+<?php include 'config.php';?>
+<html>
+    <head>
+      <title>Realtime HTML CSS Editor</title>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	  
+      
+      <script src="default.js"></script> 
+      <script>
+		
+		function refresh(){
+			var userInput = document.getElementById("html").value;
+			document.getElementById("codeViewer").srcdoc = userInput;
+		}
+		
+      </script>
+      
+    </head>
+
+    <body onload="refresh()">
+		
+		<div id="header">
+			<h2 style="font-family:'Raleway', sans-serif;" >Realtime HTML+CSS+Javascript Editor</h2>	
+		</div>		
+		
+		<textarea class="userInput" id="html" placeholder="write your code here" onkeyup="refresh()"></textarea>
+		<iframe class="viewer float" id="codeViewer"></iframe>		
+		
+		<div id="footer"><h2>Aruna Hewapathirane (GPL) </h2></div>
+    </body>
+    
+    <script>
+		document.getElementById('html').innerHTML=html;
+	</script>
+</html>
+<!-- TRY this..
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
+
+<style> p{color:white;text-shadow:1px 1px 2px black;background:red}
+body {background-color: #fff; color: #222; font-family: monospace;}
+</style>
+
+You can edit this  by typing the code in the left hand side textarea
+<h1 style='font-family:Great Vibes;font-size:35px;text-shadow:1px 1px 3px grey;font-weight:100;text-align:center'>The spectacle before us was indeed sublime</h1>
+
+<input type='text' placeholder='Input Text Box'>
+
+<p>Try clicking the button and see Javascript at work ?</p>
+
+<button onclick=alert('hello');>I am a button</button></br></br>
+
+<img src='https://divinityinus.files.wordpress.com/2018/01/andrew-ostrovsky_tech-sci_credits_reverse.gif?w=640' style="border:10px solid ghostwhite;">
+
+<img src='http://img.jetbitts.com/screensavers/down/misc/skull-fire_ppzrxqac.gif'> 
+-->

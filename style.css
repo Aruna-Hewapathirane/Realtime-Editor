@@ -1,0 +1,71 @@
+html, body, div, span, applet, object,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.userInput {
+    width: 48%;
+    margin: 0.5%;
+    height: 80%;    
+}
+
+.viewer {
+    width: 48%;
+    margin: 0.5%;
+    height: 80%;
+}
+
+#header{
+	height:35px;
+	background:ghostwhite;
+	color:grey;
+	padding:8px;
+	font-size:16px;
+	font-weight:100;
+
+}
+
+h2 {
+    font: 20px Tahoma, Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: #222;
+    text-shadow: 0px 2px 3px #555;        
+}
+
+.left{float:left}
+.footer{
+	height:35px;
+	background:ghostwhite;
+	color:grey;
+	padding:8px;
+	font-size:26px;
+	font-weight:bold;
+	text-align:center;
+
+}
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    color: white;
+    text-align: center;
+    height:35px;
+	background:ghostwhite;
+}
